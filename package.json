@@ -1,6 +1,6 @@
 {
   "name": "newman-reporter-basichugo",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A newman reporter that formats markdown with the hugo header",
   "main": "index.js",
   "scripts": {
