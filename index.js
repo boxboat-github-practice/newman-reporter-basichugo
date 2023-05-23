@@ -13,6 +13,7 @@ module.exports = function newmanHugoReporter(newman, options, collectionRunOptio
 	append("title: " + title);
 	append("folder: " + runFolder);
 	append("runNumber: " + runNumber);
+	append("runId: " + options.runId);
 	append("---");
 
     });
