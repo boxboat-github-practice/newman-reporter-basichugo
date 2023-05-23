@@ -8,7 +8,7 @@ module.exports = function newmanHugoReporter(newman, options, collectionRunOptio
 	var runFolder = collectionRunOptions.folder !== 'undefined' ? collectionRunOptions.folder : null
 	var runNumber = collectionRunOptions.reporter.basichugo.runNumber !== 'undefined' ? collectionRunOptions.reporter.basichugo.runNumber : null
 
-	var title = buildTitle(runFolder, runNumber)
+	var title = buildTitle(runFolder, runId)
 	append("---");
 	append("title: " + title);
 	append("folder: " + runFolder);
@@ -72,10 +72,10 @@ module.exports = function newmanHugoReporter(newman, options, collectionRunOptio
     });
 };
 
-function buildTitle(folder, runNumber) {
+function buildTitle(folder, runId) {
     title = '';
-    if (runNumber !== 'undefined') {
-	title = title + runNumber + "-"
+    if (runId !== 'undefined') {
+	title = title + runId + "-"
     }
     if (folder !== 'undefined') {
 	title = title + folder
