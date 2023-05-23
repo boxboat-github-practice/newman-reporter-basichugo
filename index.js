@@ -10,9 +10,11 @@ module.exports = function newmanHugoReporter(newman, options, collectionRunOptio
 
 	var title = buildTitle(runFolder, runNumber)
 	console.log(runNumber)
-	append("---" + "\n");
+	append("---");
 	append("title: " + title);
-	append("---" + "\n");
+	append("folder: " + runFolder);
+	append("runNumber: " + runNumber);
+	append("---");
 
     });
 
