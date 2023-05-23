@@ -9,7 +9,6 @@ module.exports = function newmanHugoReporter(newman, options, collectionRunOptio
 	var runNumber = collectionRunOptions.reporter.basichugo.runNumber !== 'undefined' ? collectionRunOptions.reporter.basichugo.runNumber : null
 
 	var title = buildTitle(runFolder, runNumber)
-	console.log(runNumber)
 	append("---");
 	append("title: " + title);
 	append("folder: " + runFolder);
