@@ -91,4 +91,3 @@ function assertionMarkdown(emoji, currCount, totalCount, phrase, assertionName) 
 function append(str) {
     markdownContent = markdownContent + str + "\n\n"
 };
-5053717084
